@@ -1,7 +1,7 @@
 FROM nginx
 LABEL nginxv="newnginx"
 
-RUN echo ",<h1>Hello This is Nginx containers </h1>" > /usr/share/nginx/html/index.html
+RUN echo "<h1>Hello This is Nginx containers </h1>" > /usr/share/nginx/html/index.html
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
